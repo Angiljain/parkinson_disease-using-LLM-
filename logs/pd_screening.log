@@ -1,0 +1,1309 @@
+2025-10-03 16:30:20.376 | INFO     | __main__:__init__:37 - Initializing PD Screening System
+2025-10-03 16:30:20.376 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:30:20.377 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:30:42.215 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:30:42.217 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:30:42.217 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:30:42.221 | WARNING  | llm.inference:_init_clients:47 - OPENAI_API_KEY not found in environment
+2025-10-03 16:32:26.117 | INFO     | __main__:__init__:37 - Initializing PD Screening System
+2025-10-03 16:32:26.118 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:32:26.119 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:32:44.790 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:32:44.790 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:32:44.791 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:32:44.791 | WARNING  | llm.inference:_init_clients:47 - OPENAI_API_KEY not found in environment
+2025-10-03 16:36:18.042 | INFO     | __main__:__init__:43 - Initializing PD Screening System
+2025-10-03 16:36:18.042 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:36:18.042 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:36:35.464 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:36:35.464 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:36:35.465 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:36:35.893 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 16:36:35.894 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:36:35.894 | INFO     | __main__:__init__:51 - System initialization complete
+2025-10-03 16:36:56.957 | INFO     | __main__:screen_transcript:132 - ============================================================
+2025-10-03 16:36:56.957 | INFO     | __main__:screen_transcript:133 - Starting screening pipeline
+2025-10-03 16:36:56.958 | INFO     | __main__:screen_transcript:134 - ============================================================
+2025-10-03 16:36:56.959 | INFO     | __main__:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 16:36:56.960 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 16:36:57.048 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 15 words, 2 sentences
+2025-10-03 16:36:57.049 | INFO     | __main__:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 16:36:57.050 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 16:36:57.200 | INFO     | rag.vector_store:search:199 - Retrieved 0 documents for query
+2025-10-03 16:36:57.201 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 16:36:57.201 | INFO     | __main__:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 16:36:57.202 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:36:57.203 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:36:59.929 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:36:59.938 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:36:59.939 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:36:59.945 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:37:00.264 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:00.265 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:00.265 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:00.266 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:37:00.605 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:00.605 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:00.606 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:00.606 | WARNING  | llm.response_parser:create_fallback_response:218 - Creating fallback response due to: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:00.607 | INFO     | __main__:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 16:37:43.368 | INFO     | __main__:screen_transcript:132 - ============================================================
+2025-10-03 16:37:43.369 | INFO     | __main__:screen_transcript:133 - Starting screening pipeline
+2025-10-03 16:37:43.369 | INFO     | __main__:screen_transcript:134 - ============================================================
+2025-10-03 16:37:43.369 | INFO     | __main__:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 16:37:43.370 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 16:37:43.372 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 11 words, 1 sentences
+2025-10-03 16:37:43.372 | INFO     | __main__:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 16:37:43.372 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 16:37:43.400 | INFO     | rag.vector_store:search:199 - Retrieved 0 documents for query
+2025-10-03 16:37:43.401 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 16:37:43.401 | INFO     | __main__:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 16:37:43.401 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:37:43.402 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:37:45.525 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:45.526 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:45.526 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:45.527 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:37:46.032 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:46.033 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:46.034 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:46.034 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:37:46.846 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:46.847 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:46.848 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:46.848 | WARNING  | llm.response_parser:create_fallback_response:218 - Creating fallback response due to: Error code: 401 - {'error': {'message': 'Incorrect API key provided: gsk_0Lw0**********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:37:46.849 | INFO     | __main__:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 16:39:03.927 | INFO     | __main__:__init__:43 - Initializing PD Screening System
+2025-10-03 16:39:03.928 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:39:03.928 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:39:14.677 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:39:14.678 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:39:14.678 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:39:16.142 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 16:39:16.143 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:39:16.144 | INFO     | __main__:__init__:51 - System initialization complete
+2025-10-03 16:39:25.249 | INFO     | __main__:screen_transcript:132 - ============================================================
+2025-10-03 16:39:25.249 | INFO     | __main__:screen_transcript:133 - Starting screening pipeline
+2025-10-03 16:39:25.250 | INFO     | __main__:screen_transcript:134 - ============================================================
+2025-10-03 16:39:25.251 | INFO     | __main__:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 16:39:25.251 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 16:39:25.318 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 11 words, 1 sentences
+2025-10-03 16:39:25.319 | INFO     | __main__:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 16:39:25.320 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 16:39:25.450 | INFO     | rag.vector_store:search:199 - Retrieved 0 documents for query
+2025-10-03 16:39:25.451 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 16:39:25.452 | INFO     | __main__:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 16:39:25.453 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:39:25.453 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:39:28.743 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:28.744 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:28.745 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:28.745 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:39:29.135 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:29.136 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:29.136 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:29.137 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:39:29.986 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:29.986 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:29.987 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:29.987 | WARNING  | llm.response_parser:create_fallback_response:218 - Creating fallback response due to: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk_0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:39:29.987 | INFO     | __main__:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 16:40:11.363 | INFO     | __main__:__init__:43 - Initializing PD Screening System
+2025-10-03 16:40:11.364 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:40:11.364 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:40:20.137 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:40:20.138 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:40:20.139 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:40:20.528 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 16:40:20.528 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:40:20.528 | INFO     | __main__:__init__:51 - System initialization complete
+2025-10-03 16:40:32.888 | INFO     | __main__:screen_transcript:132 - ============================================================
+2025-10-03 16:40:32.889 | INFO     | __main__:screen_transcript:133 - Starting screening pipeline
+2025-10-03 16:40:32.890 | INFO     | __main__:screen_transcript:134 - ============================================================
+2025-10-03 16:40:32.890 | INFO     | __main__:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 16:40:32.891 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 16:40:32.978 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 11 words, 1 sentences
+2025-10-03 16:40:32.980 | INFO     | __main__:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 16:40:32.980 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 16:40:33.122 | INFO     | rag.vector_store:search:199 - Retrieved 0 documents for query
+2025-10-03 16:40:33.124 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 16:40:33.125 | INFO     | __main__:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 16:40:33.125 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:40:33.126 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:40:35.613 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:35.614 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:35.614 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:35.615 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:40:36.550 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:36.550 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:36.551 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:36.552 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:40:37.096 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:37.097 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:37.097 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:37.098 | WARNING  | llm.response_parser:create_fallback_response:218 - Creating fallback response due to: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:40:37.098 | INFO     | __main__:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 16:41:44.098 | INFO     | __main__:__init__:43 - Initializing PD Screening System
+2025-10-03 16:41:44.100 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:41:44.100 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:41:54.887 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:41:54.888 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:41:54.888 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:41:56.116 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 16:41:56.117 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:41:56.118 | INFO     | __main__:__init__:51 - System initialization complete
+2025-10-03 16:42:57.625 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 16:42:57.626 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:42:57.627 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:43:09.418 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:43:09.419 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:43:09.420 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:43:10.757 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 16:43:10.758 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:43:10.759 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 16:43:30.729 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 16:43:30.730 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 16:43:30.731 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 16:43:30.733 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 16:43:30.733 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 16:43:30.843 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 11 words, 1 sentences
+2025-10-03 16:43:30.845 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 16:43:30.846 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 16:43:31.035 | INFO     | rag.vector_store:search:199 - Retrieved 0 documents for query
+2025-10-03 16:43:31.035 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 16:43:31.036 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 16:43:31.036 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:43:31.038 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:43:33.691 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:33.692 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:33.694 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:33.696 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:43:34.716 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:34.717 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:34.718 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:34.719 | INFO     | llm.inference:generate_screening_response:159 - Generating screening response using openai
+2025-10-03 16:43:35.456 | ERROR    | llm.inference:_call_openai:100 - OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:35.457 | ERROR    | llm.inference:generate_screening_response:194 - Failed to generate response: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:35.459 | ERROR    | llm.inference:generate_with_fallback:244 - Error on attempt 3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:35.460 | WARNING  | llm.response_parser:create_fallback_response:218 - Creating fallback response due to: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-0Lw0C*********************************************Vacd. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-03 16:43:35.460 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 16:51:21.148 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 16:51:21.149 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 16:51:21.149 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 16:51:32.694 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 16:51:32.695 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 16:51:32.695 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 16:51:33.377 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 16:51:33.378 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 16:51:33.378 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 16:51:33.378 | INFO     | __main__:initialize_system:35 - System initialized successfully
+2025-10-03 16:51:33.379 | INFO     | __main__:main:318 - Starting Flask API on 0.0.0.0:5000
+2025-10-03 17:08:58.589 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 17:08:58.590 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 17:08:58.590 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 17:09:03.973 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 17:09:03.973 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 17:09:03.974 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 17:09:04.244 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 17:09:04.244 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 17:09:04.244 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 17:09:04.245 | INFO     | __main__:initialize_system:35 - System initialized successfully
+2025-10-03 17:09:04.245 | INFO     | __main__:main:318 - Starting Flask API on 0.0.0.0:5000
+2025-10-03 17:10:31.549 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 17:10:31.549 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 17:10:31.550 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 17:10:35.410 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 17:10:35.411 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 17:10:35.411 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 17:10:35.688 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 17:10:35.689 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 17:10:35.689 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 17:10:35.689 | INFO     | __main__:initialize_system:35 - System initialized successfully
+2025-10-03 17:10:35.690 | INFO     | __main__:main:318 - Starting Flask API on 0.0.0.0:5000
+2025-10-03 17:11:53.419 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 17:11:53.420 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 17:11:53.420 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 17:11:59.418 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 0 documents
+2025-10-03 17:11:59.418 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 17:11:59.419 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 17:11:59.707 | INFO     | llm.inference:__init__:40 - LLMInference initialized with openai/gpt-4o
+2025-10-03 17:11:59.708 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 17:11:59.708 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 17:11:59.709 | INFO     | __main__:initialize_system:35 - System initialized successfully
+2025-10-03 17:11:59.709 | INFO     | __main__:main:318 - Starting Flask API on 0.0.0.0:5000
+2025-10-03 20:17:46.866 | INFO     | __main__:__init__:43 - Initializing PD Screening System
+2025-10-03 20:17:46.868 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 20:17:46.868 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 20:17:59.247 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-03 20:17:59.248 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 20:17:59.248 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 20:17:59.822 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-03 20:17:59.823 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-03 20:17:59.824 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:17:59.824 | INFO     | __main__:__init__:51 - System initialization complete
+2025-10-03 20:18:11.482 | INFO     | __main__:screen_transcript:132 - ============================================================
+2025-10-03 20:18:11.482 | INFO     | __main__:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:18:11.483 | INFO     | __main__:screen_transcript:134 - ============================================================
+2025-10-03 20:18:11.483 | INFO     | __main__:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:18:11.484 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:18:11.571 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 13 words, 1 sentences
+2025-10-03 20:18:11.572 | INFO     | __main__:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:18:11.574 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:18:11.726 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:18:11.727 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:18:11.727 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:18:11.728 | INFO     | __main__:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:18:11.729 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:18:11.729 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:18:16.958 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:18:16.959 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:18:16.959 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:18:16.960 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:18:16.960 | INFO     | __main__:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:19:21.308 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 20:19:21.310 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 20:19:21.310 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 20:19:33.160 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-03 20:19:33.161 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 20:19:33.162 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 20:19:34.542 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-03 20:19:34.543 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-03 20:19:34.544 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:19:34.544 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 20:20:30.384 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:20:30.384 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:20:30.385 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:20:30.386 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:20:30.387 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:20:30.481 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 29 words, 3 sentences
+2025-10-03 20:20:30.487 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:20:30.491 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:20:30.713 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:20:30.714 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:20:30.714 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:20:30.716 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:20:30.716 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:20:30.717 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:20:32.644 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:20:32.645 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:20:32.646 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:20:32.647 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:20:32.647 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:20:55.424 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:20:55.425 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:20:55.425 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:20:55.427 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:20:55.427 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:20:55.431 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 31 words, 2 sentences
+2025-10-03 20:20:55.432 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:20:55.433 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:20:55.547 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:20:55.549 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:20:55.550 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:20:55.550 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:20:55.552 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:20:55.552 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:20:56.848 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:20:56.849 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:20:56.850 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:20:56.850 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:20:56.851 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:21:23.416 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:21:23.417 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:21:23.417 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:21:23.418 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:21:23.419 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:21:23.425 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 37 words, 3 sentences
+2025-10-03 20:21:23.426 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:21:23.427 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:21:23.530 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:21:23.532 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:21:23.532 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:21:23.534 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:21:23.534 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:21:23.535 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:21:24.888 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:21:24.888 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:21:24.889 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:21:24.890 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:21:24.891 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:22:05.006 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:22:05.008 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:22:05.008 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:22:05.009 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:22:05.010 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:22:05.012 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 8 words, 1 sentences
+2025-10-03 20:22:05.019 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:22:05.021 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:22:05.124 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:22:05.125 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:22:05.126 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:22:05.127 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:22:05.129 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:22:05.132 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:22:07.207 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:22:07.208 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:22:07.209 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:22:07.210 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:22:07.227 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:23:41.133 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:23:41.134 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:23:41.135 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:23:41.136 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:23:41.137 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:23:41.140 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 26 words, 3 sentences
+2025-10-03 20:23:41.141 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:23:41.142 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:23:41.231 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:23:41.232 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:23:41.233 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:23:41.233 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:23:41.233 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:23:41.234 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:23:43.298 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:23:43.299 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:23:43.300 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:23:43.301 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:23:43.301 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:24:30.122 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:24:30.125 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:24:30.127 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:24:30.127 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:24:30.129 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:24:30.133 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 34 words, 3 sentences
+2025-10-03 20:24:30.134 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:24:30.136 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:24:30.242 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:24:30.243 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:24:30.243 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:24:30.245 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:24:30.245 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:24:30.245 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:24:31.711 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:24:31.712 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:24:31.713 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:24:31.713 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:24:31.714 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:25:40.510 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:25:40.511 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:25:40.513 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:25:40.515 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:25:40.516 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:25:40.522 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 34 words, 3 sentences
+2025-10-03 20:25:40.524 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:25:40.525 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:25:40.638 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:25:40.640 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:25:40.643 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:25:40.644 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:25:40.646 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:25:40.651 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:25:42.173 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:25:42.175 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:25:42.176 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:25:42.176 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:25:42.177 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:26:04.540 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:26:04.541 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:26:04.541 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:26:04.542 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:26:04.542 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:26:04.547 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 35 words, 4 sentences
+2025-10-03 20:26:04.549 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:26:04.552 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:26:04.656 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:26:04.657 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:26:04.658 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:26:04.661 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:26:04.662 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:26:04.670 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:26:05.665 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:26:05.666 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:26:05.667 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:26:05.668 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:26:05.669 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 20:26:27.548 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 20:26:27.550 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 20:26:27.552 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 20:26:27.552 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 20:26:27.553 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 20:26:27.556 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 22 words, 2 sentences
+2025-10-03 20:26:27.557 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 20:26:27.558 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 20:26:27.656 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 20:26:27.657 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 20:26:27.658 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 20:26:27.659 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 20:26:27.660 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 20:26:27.662 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 20:26:28.606 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 20:26:28.607 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 20:26:28.608 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 20:26:28.609 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 20:26:28.609 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:34:37.460 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 21:34:37.461 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 21:34:37.461 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 21:34:42.674 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-03 21:34:42.675 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 21:34:42.675 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 21:34:43.175 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-03 21:34:43.175 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-03 21:34:43.175 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:34:43.176 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 21:35:13.381 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:35:13.381 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:35:13.381 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:35:13.382 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:35:13.382 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:35:13.463 | WARNING  | preprocessing:preprocess:195 - Transcript validation failed: Insufficient words (min: 5)
+2025-10-03 21:35:13.463 | WARNING  | main:screen_transcript:148 - Transcript validation failed
+2025-10-03 21:35:13.464 | WARNING  | llm.response_parser:create_fallback_response:218 - Creating fallback response due to: Insufficient words (min: 5)
+2025-10-03 21:35:43.612 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:35:43.613 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:35:43.613 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:35:43.614 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:35:43.614 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:35:43.614 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 5 words, 1 sentences
+2025-10-03 21:35:43.615 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:35:43.615 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:35:43.851 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:35:43.851 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:35:43.852 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:35:43.852 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:35:43.853 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:35:43.853 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:35:44.596 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:35:44.597 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:35:44.597 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:35:44.597 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:35:44.597 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:36:19.991 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:36:19.992 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:36:19.992 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:36:19.993 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:36:19.993 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:36:19.994 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 8 words, 1 sentences
+2025-10-03 21:36:19.994 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:36:19.994 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:36:20.032 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:36:20.032 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:36:20.032 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:36:20.032 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:36:20.033 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:36:20.033 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:36:20.515 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:36:20.516 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:36:20.516 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:36:20.517 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:36:20.517 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:37:21.754 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:37:21.754 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:37:21.755 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:37:21.755 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:37:21.756 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:37:21.757 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 12 words, 1 sentences
+2025-10-03 21:37:21.757 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:37:21.758 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:37:21.789 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:37:21.789 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:37:21.790 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:37:21.790 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:37:21.790 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:37:21.790 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:37:22.536 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:37:22.537 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:37:22.537 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:37:22.538 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:37:22.538 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:38:00.719 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:38:00.720 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:38:00.721 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:38:00.721 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:38:00.722 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:38:00.722 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 17 words, 1 sentences
+2025-10-03 21:38:00.723 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:38:00.723 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:38:00.752 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:38:00.753 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:38:00.753 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:38:00.754 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:38:00.754 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:38:00.754 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:38:01.114 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:38:01.114 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:38:01.114 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:38:01.115 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:38:01.115 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:39:00.604 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:39:00.604 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:39:00.605 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:39:00.605 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:39:00.605 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:39:00.607 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 34 words, 3 sentences
+2025-10-03 21:39:00.607 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:39:00.607 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:39:00.650 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:39:00.650 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:39:00.650 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:39:00.651 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:39:00.651 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:39:00.651 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:39:01.318 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:39:01.319 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:39:01.319 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:39:01.319 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:39:01.320 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:39:20.494 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:39:20.494 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:39:20.494 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:39:20.495 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:39:20.495 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:39:20.496 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 34 words, 3 sentences
+2025-10-03 21:39:20.497 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:39:20.498 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:39:20.527 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:39:20.527 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:39:20.528 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:39:20.528 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:39:20.528 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:39:20.528 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:39:20.973 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:39:20.973 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:39:20.974 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:39:20.974 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:39:20.974 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:42:31.367 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 21:42:31.368 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 21:42:31.368 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 21:42:35.230 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-03 21:42:35.230 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 21:42:35.231 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 21:42:35.487 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-03 21:42:35.487 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-03 21:42:35.488 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:42:35.488 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 21:42:35.488 | INFO     | __main__:initialize_system:35 - System initialized successfully
+2025-10-03 21:42:35.488 | INFO     | __main__:main:318 - Starting Flask API on 0.0.0.0:5000
+2025-10-03 21:43:02.443 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 21:43:02.443 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 21:43:02.444 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 21:43:06.339 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-03 21:43:06.340 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 21:43:06.340 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 21:43:06.610 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-03 21:43:06.611 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-03 21:43:06.611 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:43:06.611 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 21:43:06.611 | INFO     | __main__:initialize_system:35 - System initialized successfully
+2025-10-03 21:43:06.612 | INFO     | __main__:main:318 - Starting Flask API on 0.0.0.0:5000
+2025-10-03 21:47:22.060 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-03 21:47:22.060 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-03 21:47:22.061 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-03 21:47:27.913 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-03 21:47:27.913 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-03 21:47:27.914 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-03 21:47:28.378 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-03 21:47:28.378 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-03 21:47:28.378 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:47:28.379 | INFO     | main:__init__:51 - System initialization complete
+2025-10-03 21:47:53.982 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:47:53.982 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:47:53.983 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:47:53.983 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:47:53.984 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:47:54.013 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 35 words, 4 sentences
+2025-10-03 21:47:54.014 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:47:54.014 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:47:54.115 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:47:54.115 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:47:54.116 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:47:54.116 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:47:54.116 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:47:54.116 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:47:54.662 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:47:54.663 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:47:54.663 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:47:54.664 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:47:54.664 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:48:27.127 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:48:27.127 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:48:27.128 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:48:27.129 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:48:27.130 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:48:27.131 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 28 words, 3 sentences
+2025-10-03 21:48:27.132 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:48:27.132 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:48:27.175 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:48:27.175 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:48:27.175 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:48:27.175 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:48:27.176 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:48:27.176 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:48:27.543 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:48:27.544 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:48:27.544 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:48:27.545 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:48:27.545 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-03 21:50:04.870 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-03 21:50:04.871 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-03 21:50:04.871 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-03 21:50:04.872 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-03 21:50:04.872 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-03 21:50:04.874 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 30 words, 4 sentences
+2025-10-03 21:50:04.874 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-03 21:50:04.874 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-03 21:50:04.914 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-03 21:50:04.914 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-03 21:50:04.915 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-03 21:50:04.915 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-03 21:50:04.915 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-03 21:50:04.915 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-03 21:50:05.374 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-03 21:50:05.374 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-03 21:50:05.374 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-03 21:50:05.375 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-03 21:50:05.375 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-04 15:00:34.443 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 15:00:34.445 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 15:00:34.446 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 15:00:42.582 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 15:00:42.583 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 15:00:42.584 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 15:00:44.100 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 15:00:44.101 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 15:00:44.102 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 15:00:44.103 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 15:01:31.078 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 15:01:31.080 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 15:01:31.081 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 15:01:31.081 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-04 15:01:31.082 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 15:01:31.279 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 5 words, 1 sentences
+2025-10-04 15:01:31.280 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-04 15:01:31.281 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-04 15:01:31.610 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-04 15:01:31.611 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-04 15:01:31.612 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 15:01:31.613 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-04 15:01:31.614 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 15:01:31.614 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 15:01:33.220 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 15:01:33.221 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 15:01:33.223 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 15:01:33.224 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 15:01:33.225 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-04 15:37:10.011 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 15:37:10.012 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 15:37:10.012 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 15:37:22.132 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 15:37:22.133 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 15:37:22.135 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 15:37:23.640 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 15:37:23.641 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 15:37:23.642 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 15:37:23.643 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 15:40:01.058 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 15:40:01.060 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 15:40:01.060 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 15:40:01.062 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-04 15:40:01.062 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 15:40:01.140 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 54 words, 3 sentences
+2025-10-04 15:40:01.145 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-04 15:40:01.147 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-04 15:40:01.400 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-04 15:40:01.401 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-04 15:40:01.401 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 15:40:01.402 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-04 15:40:01.402 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 15:40:01.403 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 15:40:02.161 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 15:40:02.162 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 15:40:02.164 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 15:40:02.164 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 15:40:02.165 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-04 15:40:50.662 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 15:40:50.663 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 15:40:50.663 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 15:40:50.664 | INFO     | main:screen_transcript:144 - Step 1: Preprocessing transcript
+2025-10-04 15:40:50.664 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 15:40:50.666 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 30 words, 2 sentences
+2025-10-04 15:40:50.667 | INFO     | main:screen_transcript:156 - Step 2: Retrieving medical context
+2025-10-04 15:40:50.667 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-04 15:40:50.729 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-04 15:40:50.729 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-04 15:40:50.730 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 15:40:50.730 | INFO     | main:screen_transcript:168 - Step 3: Generating screening assessment
+2025-10-04 15:40:50.731 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 15:40:50.731 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 15:40:51.293 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 15:40:51.294 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 15:40:51.294 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 15:40:51.295 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 15:40:51.295 | INFO     | main:screen_transcript:189 - Screening pipeline completed successfully
+2025-10-04 15:54:37.770 | INFO     | __main__:__init__:43 - Initializing PD Screening System
+2025-10-04 15:54:37.771 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 15:54:37.771 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 15:54:51.177 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 15:54:51.178 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 15:54:51.178 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 15:54:51.632 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 15:54:51.633 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 15:54:51.633 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 15:54:51.633 | INFO     | __main__:__init__:51 - System initialization complete
+2025-10-04 15:54:51.633 | INFO     | __main__:screen_transcript:132 - ============================================================
+2025-10-04 15:54:51.633 | INFO     | __main__:screen_transcript:133 - Starting screening pipeline
+2025-10-04 15:54:51.634 | INFO     | __main__:screen_transcript:134 - ============================================================
+2025-10-04 15:54:51.634 | INFO     | __main__:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 15:54:51.634 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 15:54:51.662 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 88 words, 6 sentences
+2025-10-04 15:54:51.663 | INFO     | __main__:screen_transcript:162 - Transcript quality score: 0.94
+2025-10-04 15:54:51.663 | INFO     | __main__:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 15:54:51.663 | INFO     | rag.retriever:retrieve:50 - Retrieving top-3 passages for query
+2025-10-04 15:54:51.764 | INFO     | rag.vector_store:search:199 - Retrieved 3 documents for query
+2025-10-04 15:54:51.765 | INFO     | rag.retriever:retrieve:62 - Filtered 3 results below similarity threshold 0.7
+2025-10-04 15:54:51.765 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 15:54:51.765 | INFO     | __main__:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 15:54:51.766 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 15:54:51.766 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 15:54:53.832 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 15:54:53.833 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 15:54:53.833 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 15:54:53.833 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 15:54:53.834 | INFO     | __main__:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:04:10.187 | INFO     | __main__:__init__:43 - Initializing PD Screening System
+2025-10-04 16:04:10.188 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:04:10.189 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:04:21.617 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:04:21.618 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:04:21.618 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:04:22.178 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:04:22.178 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:04:22.179 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:04:22.179 | INFO     | __main__:__init__:51 - System initialization complete
+2025-10-04 16:04:22.179 | INFO     | __main__:screen_transcript:132 - ============================================================
+2025-10-04 16:04:22.180 | INFO     | __main__:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:04:22.180 | INFO     | __main__:screen_transcript:134 - ============================================================
+2025-10-04 16:04:22.181 | INFO     | __main__:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:04:22.181 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:04:22.236 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 43 words, 5 sentences
+2025-10-04 16:04:22.236 | INFO     | __main__:screen_transcript:162 - Transcript quality score: 0.88
+2025-10-04 16:04:22.237 | INFO     | __main__:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:04:22.238 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:04:22.362 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:04:22.362 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:04:22.362 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:04:22.363 | INFO     | __main__:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:04:22.363 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:04:22.364 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:04:23.247 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:04:23.248 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:04:23.250 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:04:23.250 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:04:23.251 | INFO     | __main__:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:05:13.189 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:05:13.190 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:05:13.191 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:05:25.366 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:05:25.367 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:05:25.368 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:05:26.786 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:05:26.787 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:05:26.788 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:05:26.788 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:06:24.522 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:06:24.523 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:06:24.525 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:06:24.526 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:06:24.529 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:06:24.627 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 27 words, 2 sentences
+2025-10-04 16:06:24.628 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.55
+2025-10-04 16:06:24.628 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:06:24.630 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:06:24.809 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:06:24.810 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:06:24.810 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:06:24.811 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:06:24.812 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:06:24.812 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:06:26.584 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:06:26.584 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:06:26.586 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:06:26.587 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:06:26.588 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:07:17.240 | INFO     | main:_load_config:62 - Configuration loaded from config.yaml
+2025-10-04 16:07:17.251 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:07:17.251 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:07:17.252 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:07:27.119 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:07:27.120 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:07:27.121 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:07:28.274 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:07:28.275 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:07:28.276 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:07:28.277 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:07:53.414 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:07:53.415 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:07:53.416 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:07:53.417 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:07:53.418 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:07:53.422 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 32 words, 2 sentences
+2025-10-04 16:07:53.424 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.58
+2025-10-04 16:07:53.426 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:07:53.427 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:07:53.583 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:07:53.585 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:07:53.585 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:07:53.586 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:07:53.586 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:07:53.587 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:07:54.413 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:07:54.414 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:07:54.415 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:07:54.415 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:07:54.416 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:08:13.067 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:08:13.068 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:08:13.069 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:08:13.070 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:08:13.071 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:08:13.076 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 24 words, 2 sentences
+2025-10-04 16:08:13.077 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.55
+2025-10-04 16:08:13.077 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:08:13.078 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:08:13.147 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:08:13.147 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:08:13.149 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:08:13.150 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:08:13.150 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:08:13.150 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:08:14.677 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:08:14.678 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:08:14.679 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:08:14.680 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:08:14.681 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:08:34.750 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:08:34.751 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:08:34.752 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:08:34.753 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:08:34.754 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:08:34.760 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 34 words, 2 sentences
+2025-10-04 16:08:34.761 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.63
+2025-10-04 16:08:34.762 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:08:34.762 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:08:34.893 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:08:34.894 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:08:34.894 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:08:34.895 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:08:34.896 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:08:34.897 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:08:35.776 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:08:35.777 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:08:35.778 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:08:35.778 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:08:35.780 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:08:46.567 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:08:46.569 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:08:46.570 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:08:46.571 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:08:46.573 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:08:46.579 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 27 words, 2 sentences
+2025-10-04 16:08:46.580 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.72
+2025-10-04 16:08:46.583 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:08:46.585 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:08:46.694 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:08:46.696 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:08:46.696 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:08:46.697 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:08:46.698 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:08:46.698 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:08:47.521 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:08:47.522 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:08:47.523 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:08:47.524 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:08:47.525 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:09:11.034 | INFO     | main:_load_config:62 - Configuration loaded from config.yaml
+2025-10-04 16:09:11.043 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:09:11.043 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:09:11.044 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:09:20.622 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:09:20.623 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:09:20.623 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:09:21.011 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:09:21.011 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:09:21.011 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:09:21.012 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:09:28.585 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:09:28.586 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:09:28.587 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:09:28.588 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:09:28.588 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:09:28.591 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 32 words, 2 sentences
+2025-10-04 16:09:28.592 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.45
+2025-10-04 16:09:28.594 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:09:28.595 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:09:28.673 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:09:28.673 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:09:28.674 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:09:28.674 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:09:28.674 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:09:28.676 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:09:30.042 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:09:30.043 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:09:30.043 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:09:30.044 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:09:30.045 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:10:07.382 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:10:07.382 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:10:07.385 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:10:07.387 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:10:07.388 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:10:07.391 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 27 words, 2 sentences
+2025-10-04 16:10:07.392 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.56
+2025-10-04 16:10:07.393 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:10:07.393 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:10:07.463 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:10:07.464 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:10:07.464 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:10:07.464 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:10:07.465 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:10:07.465 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:10:08.290 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:10:08.291 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:10:08.292 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:10:08.293 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:10:08.293 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:10:27.293 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:10:27.294 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:10:27.294 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:10:27.295 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:10:27.296 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:10:27.299 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 34 words, 3 sentences
+2025-10-04 16:10:27.300 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.56
+2025-10-04 16:10:27.301 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:10:27.302 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:10:27.413 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:10:27.413 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:10:27.414 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:10:27.414 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:10:27.414 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:10:27.415 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:10:27.925 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:10:27.927 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:10:27.927 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:10:27.928 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:10:27.928 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:10:39.871 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:10:39.872 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:10:39.873 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:10:39.874 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:10:39.875 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:10:39.878 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 36 words, 3 sentences
+2025-10-04 16:10:39.879 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.66
+2025-10-04 16:10:39.880 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:10:39.881 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:10:39.943 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:10:39.943 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:10:39.944 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:10:39.944 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:10:39.944 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:10:39.945 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:10:40.975 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:10:40.976 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:10:40.976 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:10:40.977 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:10:40.977 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:21:06.554 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:21:06.555 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:21:06.556 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:21:22.225 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:21:22.226 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:21:22.227 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:21:23.495 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:21:23.496 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:21:23.497 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:21:23.498 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:22:04.822 | INFO     | main:_load_config:62 - Configuration loaded from config.yaml
+2025-10-04 16:22:04.827 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:22:04.828 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:22:04.829 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:22:13.393 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:22:13.394 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:22:13.395 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:22:14.638 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:22:14.640 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:22:14.641 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:22:14.641 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:22:29.769 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:22:29.770 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:22:29.771 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:22:29.772 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:22:29.774 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:22:29.844 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 39 words, 3 sentences
+2025-10-04 16:22:29.845 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.53
+2025-10-04 16:22:29.847 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:22:29.847 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:22:29.975 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:22:29.976 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:22:29.977 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:22:29.977 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:22:29.977 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:22:29.978 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:22:32.029 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:22:32.030 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:22:32.031 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:22:32.031 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:22:32.032 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:23:19.783 | INFO     | main:_load_config:62 - Configuration loaded from config.yaml
+2025-10-04 16:23:19.786 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:23:19.787 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:23:19.787 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:23:31.777 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:23:31.778 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:23:31.778 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:23:32.398 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:23:32.398 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:23:32.399 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:23:32.399 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:23:53.550 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:23:53.551 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:23:53.551 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:23:53.552 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:23:53.553 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:23:53.555 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 39 words, 3 sentences
+2025-10-04 16:23:53.556 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.53
+2025-10-04 16:23:53.557 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:23:53.557 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:23:53.637 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:23:53.639 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:23:53.639 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:23:53.640 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:23:53.640 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:23:53.641 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:23:55.234 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:23:55.235 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:23:55.235 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:23:55.236 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:23:55.237 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:30:33.000 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:30:33.001 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:30:33.001 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:30:41.863 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:30:41.863 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:30:41.865 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:30:42.298 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:30:42.299 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:30:42.299 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:30:42.300 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:31:06.098 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:31:06.098 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:31:06.099 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:31:06.099 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:31:06.100 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:31:06.184 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 39 words, 3 sentences
+2025-10-04 16:31:06.184 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.53
+2025-10-04 16:31:06.184 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:31:06.184 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:31:06.247 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:31:06.247 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:31:06.248 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:31:06.248 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:31:06.248 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:31:06.248 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:31:07.098 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:31:07.099 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:31:07.100 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:31:07.100 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:31:07.100 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:33:08.434 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:33:08.434 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:33:08.435 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:33:08.436 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:33:08.437 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:33:08.438 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 31 words, 3 sentences
+2025-10-04 16:33:08.439 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.59
+2025-10-04 16:33:08.440 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:33:08.440 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:33:08.473 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:33:08.473 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:33:08.474 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:33:08.474 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:33:08.474 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:33:08.474 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:33:09.855 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:33:09.855 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:33:09.856 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:33:09.857 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:33:09.857 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:34:51.939 | INFO     | main:_load_config:62 - Configuration loaded from config.yaml
+2025-10-04 16:34:51.942 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:34:51.943 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:34:51.943 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:34:56.328 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:34:56.329 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:34:56.329 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:34:56.773 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:34:56.773 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:34:56.775 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:34:56.775 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:35:02.425 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:35:02.426 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:35:02.427 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:35:02.427 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:35:02.428 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:35:02.429 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 31 words, 3 sentences
+2025-10-04 16:35:02.429 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.59
+2025-10-04 16:35:02.429 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:35:02.430 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:35:02.472 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:35:02.472 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:35:02.473 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:35:02.473 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:35:02.473 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:35:02.473 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:35:03.000 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:35:03.000 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:35:03.001 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:35:03.001 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:35:03.001 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:35:53.950 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:35:53.950 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:35:53.951 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:35:53.951 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:35:53.952 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:35:53.953 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 31 words, 3 sentences
+2025-10-04 16:35:53.954 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.59
+2025-10-04 16:35:53.954 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:35:53.955 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:35:53.985 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:35:53.986 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:35:53.986 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:35:53.986 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:35:53.987 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:35:53.987 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:35:54.460 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:35:54.461 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:35:54.461 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:35:54.462 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:35:54.462 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:36:31.459 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:36:31.460 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:36:31.460 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:36:31.461 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:36:31.461 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:36:31.462 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 31 words, 3 sentences
+2025-10-04 16:36:31.463 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.59
+2025-10-04 16:36:31.464 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:36:31.464 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:36:31.496 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:36:31.497 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:36:31.497 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:36:31.497 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:36:31.497 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:36:31.498 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:36:32.775 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:36:32.776 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:36:32.776 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:36:32.776 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:36:32.778 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-04 16:37:05.442 | INFO     | main:_load_config:62 - Configuration loaded from config.yaml
+2025-10-04 16:37:05.446 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-04 16:37:05.447 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-04 16:37:05.447 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-04 16:37:09.059 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-04 16:37:09.059 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-04 16:37:09.060 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-04 16:37:09.466 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-04 16:37:09.467 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-04 16:37:09.467 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:37:09.468 | INFO     | main:__init__:51 - System initialization complete
+2025-10-04 16:37:15.334 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-04 16:37:15.335 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-04 16:37:15.335 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-04 16:37:15.336 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-04 16:37:15.336 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-04 16:37:15.338 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 31 words, 3 sentences
+2025-10-04 16:37:15.338 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.59
+2025-10-04 16:37:15.339 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-04 16:37:15.339 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-04 16:37:15.381 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-04 16:37:15.381 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-04 16:37:15.382 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-04 16:37:15.382 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-04 16:37:15.382 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-04 16:37:15.382 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-04 16:37:15.891 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-04 16:37:15.892 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-04 16:37:15.892 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-04 16:37:15.892 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-04 16:37:15.893 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-05 22:35:42.112 | INFO     | main:__init__:43 - Initializing PD Screening System
+2025-10-05 22:35:42.112 | INFO     | preprocessing:__init__:41 - TextPreprocessor initialized
+2025-10-05 22:35:42.113 | INFO     | rag.vector_store:__init__:35 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-10-05 22:35:47.865 | INFO     | rag.vector_store:_init_chromadb:67 - ChromaDB collection ready with 30 documents
+2025-10-05 22:35:47.865 | INFO     | rag.vector_store:__init__:46 - VectorStore initialized with chromadb
+2025-10-05 22:35:47.866 | INFO     | rag.retriever:__init__:28 - ContextRetriever initialized
+2025-10-05 22:35:48.479 | INFO     | llm.inference:_init_clients:67 - Groq client initialized successfully
+2025-10-05 22:35:48.479 | INFO     | llm.inference:__init__:45 - LLMInference initialized with groq/llama-3.1-8b-instant
+2025-10-05 22:35:48.479 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-05 22:35:48.479 | INFO     | main:__init__:51 - System initialization complete
+2025-10-05 22:36:34.199 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-05 22:36:34.199 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-05 22:36:34.200 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-05 22:36:34.200 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-05 22:36:34.201 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-05 22:36:34.282 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 19 words, 1 sentences
+2025-10-05 22:36:34.283 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.42
+2025-10-05 22:36:34.283 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-05 22:36:34.283 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-05 22:36:34.578 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-05 22:36:34.578 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-05 22:36:34.578 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-05 22:36:34.579 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-05 22:36:34.579 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-05 22:36:34.579 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-05 22:36:35.454 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-05 22:36:35.454 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-05 22:36:35.455 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-05 22:36:35.455 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-05 22:36:35.455 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-05 22:37:23.753 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-05 22:37:23.754 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-05 22:37:23.754 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-05 22:37:23.755 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-05 22:37:23.755 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-05 22:37:23.757 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 25 words, 2 sentences
+2025-10-05 22:37:23.758 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.63
+2025-10-05 22:37:23.758 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-05 22:37:23.759 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-05 22:37:23.798 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-05 22:37:23.798 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-05 22:37:23.799 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-05 22:37:23.799 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-05 22:37:23.799 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-05 22:37:23.799 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-05 22:37:24.240 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-05 22:37:24.241 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-05 22:37:24.242 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-05 22:37:24.242 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-05 22:37:24.243 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
+2025-10-05 22:37:37.963 | INFO     | main:screen_transcript:132 - ============================================================
+2025-10-05 22:37:37.964 | INFO     | main:screen_transcript:133 - Starting screening pipeline
+2025-10-05 22:37:37.964 | INFO     | main:screen_transcript:134 - ============================================================
+2025-10-05 22:37:37.965 | INFO     | main:screen_transcript:145 - Step 1: Preprocessing transcript
+2025-10-05 22:37:37.966 | INFO     | preprocessing:preprocess:186 - Starting text preprocessing
+2025-10-05 22:37:37.967 | INFO     | preprocessing:preprocess:215 - Preprocessing complete: 25 words, 2 sentences
+2025-10-05 22:37:37.967 | INFO     | main:screen_transcript:162 - Transcript quality score: 0.63
+2025-10-05 22:37:37.968 | INFO     | main:screen_transcript:166 - Step 2: Retrieving medical context
+2025-10-05 22:37:37.969 | INFO     | rag.retriever:retrieve:50 - Retrieving top-5 passages for query
+2025-10-05 22:37:37.996 | INFO     | rag.vector_store:search:199 - Retrieved 5 documents for query
+2025-10-05 22:37:37.996 | INFO     | rag.retriever:retrieve:62 - Filtered 5 results below similarity threshold 0.65
+2025-10-05 22:37:37.996 | INFO     | rag.retriever:retrieve:82 - Retrieved 0 relevant passages
+2025-10-05 22:37:37.996 | INFO     | main:screen_transcript:178 - Step 3: Generating screening assessment
+2025-10-05 22:37:37.997 | INFO     | llm.response_parser:__init__:28 - ResponseParser initialized
+2025-10-05 22:37:37.997 | INFO     | llm.inference:generate_screening_response:201 - Generating screening response using groq
+2025-10-05 22:37:38.478 | INFO     | llm.inference:generate_screening_response:240 - Successfully generated LLM response
+2025-10-05 22:37:38.478 | INFO     | llm.response_parser:parse_and_validate:170 - Parsing and validating LLM response
+2025-10-05 22:37:38.479 | INFO     | llm.response_parser:parse_and_validate:198 - Response validation successful
+2025-10-05 22:37:38.480 | INFO     | llm.inference:generate_with_fallback:281 - Valid response generated on attempt 1
+2025-10-05 22:37:38.480 | INFO     | main:screen_transcript:199 - Screening pipeline completed successfully
